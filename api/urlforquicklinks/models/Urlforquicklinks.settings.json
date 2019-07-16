@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "urlforquicklinks",
+  "info": {
+    "name": "urlforquicklinks",
+    "description": "UrlForQuickLinks"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "connection": "default",
+  "collectionName": "Events",
+  "info": {
+    "name": "events",
+    "description": "Events"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "LocationEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "LocationAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "albumstore": {
+      "model": "albumstores",
+      "via": "undefined",
+      "columnName": ""
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "ShortDescriptionEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "ShortDescriptionAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

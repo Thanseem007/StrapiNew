@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatepublications",
+      "handler": "Egatepublications.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatepublications/count",
+      "handler": "Egatepublications.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatepublications/:_id",
+      "handler": "Egatepublications.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatepublications",
+      "handler": "Egatepublications.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatepublications/:_id",
+      "handler": "Egatepublications.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatepublications/:_id",
+      "handler": "Egatepublications.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

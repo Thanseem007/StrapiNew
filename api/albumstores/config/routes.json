@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/albumstores",
+      "handler": "Albumstores.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albumstores/count",
+      "handler": "Albumstores.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albumstores/:_id",
+      "handler": "Albumstores.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/albumstores",
+      "handler": "Albumstores.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/albumstores/:_id",
+      "handler": "Albumstores.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/albumstores/:_id",
+      "handler": "Albumstores.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

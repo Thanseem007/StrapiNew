@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "albumstores",
+  "info": {
+    "name": "egatealbumstores",
+    "description": "Album Stores"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "AlbumTitleEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "AlbumTitleAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "AlbumDescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "AlbumDescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "AlbumCover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "egatephotos": {
+      "collection": "egatephotos",
+      "via": "egatealbumstores"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

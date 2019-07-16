@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "photos",
+  "info": {
+    "name": "photo",
+    "description": "Photos"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PhotoTitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "PhotoTitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "albumstore": {
+      "model": "albumstores",
+      "via": "photos",
+      "columnName": ""
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Enable": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}

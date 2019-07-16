@@ -1,0 +1,63 @@
+{
+  "connection": "default",
+  "collectionName": "egatepublications",
+  "info": {
+    "name": "egatepublications",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEnglish": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleArabic": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "DescriptionEnglish": {
+      "default": "",
+      "type": "text"
+    },
+    "DescriptionArabic": {
+      "default": "",
+      "type": "text"
+    },
+    "PublicationThumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "PublicationMedia": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "TypeOfPublication": {
+      "default": "PDF",
+      "type": "enumeration",
+      "enum": [
+        "PDF",
+        "VIDEO",
+        "AUDIO"
+      ]
+    },
+    "Enable": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}

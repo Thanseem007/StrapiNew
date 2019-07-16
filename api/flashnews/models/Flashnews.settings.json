@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "flashnews",
+    "description": "FlashNews"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "ContentEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "ContentAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "FromDate": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "ToDate": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "connection": "default",
+  "collectionName": "CustomerHappinessCenters",
+  "info": {
+    "name": "customerhappinesscenters",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "NameEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "NameAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "Latitude": {
+      "default": "",
+      "type": "float"
+    },
+    "Longitude": {
+      "default": "",
+      "type": "float"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean"
+    },
+    "Details": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "default": "",
+      "type": "string",
+      "required": true
+    }
+  }
+}

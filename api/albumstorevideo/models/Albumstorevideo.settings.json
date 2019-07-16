@@ -1,0 +1,79 @@
+{
+  "connection": "default",
+  "collectionName": "albumstorevideos",
+  "info": {
+    "name": "albumstorevideo",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Location": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "Thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "LocationAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "videos": {
+      "collection": "video",
+      "via": "albumstorevideo"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "ShortDescriptionEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "ShortDescriptionAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    }
+  }
+}

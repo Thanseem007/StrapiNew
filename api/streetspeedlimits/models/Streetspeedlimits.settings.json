@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "streetspeedlimits",
+  "info": {
+    "name": "streetspeedlimits",
+    "description": "Street Speed Limits and Radar Control Limits"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "RoadNameEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "RoadNameAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "RoadSpeed": {
+      "default": "",
+      "type": "float",
+      "required": true
+    },
+    "RadarControl": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "NumberOfPaths": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

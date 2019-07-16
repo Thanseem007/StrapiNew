@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatepolicenews",
+      "handler": "Egatepolicenews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatepolicenews/count",
+      "handler": "Egatepolicenews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatepolicenews/:_id",
+      "handler": "Egatepolicenews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatepolicenews",
+      "handler": "Egatepolicenews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatepolicenews/:_id",
+      "handler": "Egatepolicenews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatepolicenews/:_id",
+      "handler": "Egatepolicenews.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

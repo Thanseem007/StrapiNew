@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sharjahnews",
+      "handler": "Sharjahnews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sharjahnews/count",
+      "handler": "Sharjahnews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sharjahnews/:_id",
+      "handler": "Sharjahnews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sharjahnews",
+      "handler": "Sharjahnews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sharjahnews/:_id",
+      "handler": "Sharjahnews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sharjahnews/:_id",
+      "handler": "Sharjahnews.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

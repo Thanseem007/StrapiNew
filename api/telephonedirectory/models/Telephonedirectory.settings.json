@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "telephonedirectory",
+  "info": {
+    "name": "telephonedirectory",
+    "description": "Telephone Directory"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "NameEn": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "NameAr": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Fax": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "websiteareas",
+  "info": {
+    "name": "websiteareas",
+    "description": "Areas of police station"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "AreaNameEn": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "AreaNameAr": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "websiteourlocations": {
+      "collection": "websiteourlocations",
+      "dominant": true,
+      "via": "websiteareas"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "lawsandlegislations",
+  "info": {
+    "name": "lawsandlegislations",
+    "description": "Laws and Legislations"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "LegislationNameEn": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "LegislationNameAr": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "IssueDate": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "UploadedFile": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "fromthecommandersdesk",
+  "info": {
+    "name": "fromthecommandersdesk",
+    "description": "from the commanders desk"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "maxLength": 300
+    },
+    "MessageEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "MessageAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

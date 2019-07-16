@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "privacypolicies",
+  "info": {
+    "name": "privacypolicy",
+    "description": "Privacy Policies"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PrivacyPolicyEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "PrivacyPolicyAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

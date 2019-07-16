@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/streetspeedlimits",
+      "handler": "Streetspeedlimits.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/streetspeedlimits/count",
+      "handler": "Streetspeedlimits.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/streetspeedlimits/:_id",
+      "handler": "Streetspeedlimits.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/streetspeedlimits",
+      "handler": "Streetspeedlimits.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/streetspeedlimits/:_id",
+      "handler": "Streetspeedlimits.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/streetspeedlimits/:_id",
+      "handler": "Streetspeedlimits.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

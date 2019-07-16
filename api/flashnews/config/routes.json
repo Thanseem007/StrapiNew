@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/flashnews",
+      "handler": "Flashnews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flashnews/count",
+      "handler": "Flashnews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flashnews/:_id",
+      "handler": "Flashnews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/flashnews",
+      "handler": "Flashnews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/flashnews/:_id",
+      "handler": "Flashnews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/flashnews/:_id",
+      "handler": "Flashnews.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

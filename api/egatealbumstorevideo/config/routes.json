@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatealbumstorevideos",
+      "handler": "Egatealbumstorevideo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatealbumstorevideos/count",
+      "handler": "Egatealbumstorevideo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatealbumstorevideos/:_id",
+      "handler": "Egatealbumstorevideo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatealbumstorevideos",
+      "handler": "Egatealbumstorevideo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatealbumstorevideos/:_id",
+      "handler": "Egatealbumstorevideo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatealbumstorevideos/:_id",
+      "handler": "Egatealbumstorevideo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

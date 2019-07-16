@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "Hospitals",
+  "info": {
+    "name": "hospitals",
+    "description": "Hospitals"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "NameEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "NameAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "default": "",
+      "maxLength": 15,
+      "type": "string"
+    },
+    "Latitude": {
+      "default": "",
+      "type": "float",
+      "required": true
+    },
+    "Longitude": {
+      "default": "",
+      "type": "float",
+      "required": true
+    },
+    "Details": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

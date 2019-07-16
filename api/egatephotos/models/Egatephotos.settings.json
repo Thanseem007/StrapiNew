@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "egatephotos",
+  "info": {
+    "name": "egatephotos",
+    "description": "Photos"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PhotoTitleEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "PhotoTitleAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "egatealbumstores": {
+      "model": "egatealbumstores",
+      "via": "egatephotos"
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    }
+  }
+}

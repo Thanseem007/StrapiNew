@@ -1,0 +1,83 @@
+{
+  "connection": "default",
+  "collectionName": "albumstore",
+  "info": {
+    "name": "albumstores",
+    "description": "Photo Albums"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "AlbumTitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "AlbumTitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "AlbumDescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "AlbumDescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "photos": {
+      "collection": "photo",
+      "via": "albumstore"
+    },
+    "AlbumCover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "undefined": {
+      "collection": "events",
+      "via": "albumstore"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "ShortDescriptionEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "ShortDescriptionAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "Location": {
+      "default": "",
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "LocationAR": {
+      "default": "",
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    }
+  }
+}

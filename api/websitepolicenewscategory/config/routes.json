@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/websitepolicenewscategories",
+      "handler": "Websitepolicenewscategory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websitepolicenewscategories/count",
+      "handler": "Websitepolicenewscategory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websitepolicenewscategories/:_id",
+      "handler": "Websitepolicenewscategory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/websitepolicenewscategories",
+      "handler": "Websitepolicenewscategory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/websitepolicenewscategories/:_id",
+      "handler": "Websitepolicenewscategory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/websitepolicenewscategories/:_id",
+      "handler": "Websitepolicenewscategory.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

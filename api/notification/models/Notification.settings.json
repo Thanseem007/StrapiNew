@@ -1,0 +1,63 @@
+{
+  "connection": "default",
+  "collectionName": "notification",
+  "info": {
+    "name": "notification",
+    "description": "Website notification for the services"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEn": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "TitleAr": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "DescriptionEn": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAr": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Url": {
+      "default": "",
+      "type": "string"
+    },
+    "FromDate": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "ToDate": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "Clickable": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "Icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "blackpointsoftrafficviolation",
+  "info": {
+    "name": "blackpointsoftrafficviolation",
+    "description": "Balck points of traffic violations"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "FineAmount": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "BlackPoints": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "VehicleConfiscationPeriod": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

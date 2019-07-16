@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "audios",
+  "info": {
+    "name": "websiteaudio",
+    "description": "Audios"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "Audio": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "audiostore": {
+      "model": "websiteaudiostore",
+      "via": "audio"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "mycontent",
+  "info": {
+    "name": "mycontent",
+    "description": "for Banners"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "EventNo": {
+      "default": "",
+      "type": "integer"
+    },
+    "Desc": {
+      "default": "",
+      "type": "string"
+    },
+    "Videos": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Bio": {
+      "default": "",
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trafficstations",
+      "handler": "Trafficstations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trafficstations/count",
+      "handler": "Trafficstations.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trafficstations/:_id",
+      "handler": "Trafficstations.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trafficstations",
+      "handler": "Trafficstations.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trafficstations/:_id",
+      "handler": "Trafficstations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trafficstations/:_id",
+      "handler": "Trafficstations.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

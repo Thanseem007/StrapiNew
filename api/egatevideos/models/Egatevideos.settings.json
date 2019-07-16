@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "egatevideos",
+  "info": {
+    "name": "egatevideos",
+    "description": "Videos"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "TitleAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "Videos": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "egatealbumstorevideo": {
+      "model": "egatealbumstorevideo",
+      "via": "egatevideos"
+    },
+    "Thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    }
+  }
+}

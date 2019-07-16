@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egateevents",
+      "handler": "Egateevents.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egateevents/count",
+      "handler": "Egateevents.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egateevents/:_id",
+      "handler": "Egateevents.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egateevents",
+      "handler": "Egateevents.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egateevents/:_id",
+      "handler": "Egateevents.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egateevents/:_id",
+      "handler": "Egateevents.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

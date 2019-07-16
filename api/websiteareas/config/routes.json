@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/websiteareas",
+      "handler": "Websiteareas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websiteareas/count",
+      "handler": "Websiteareas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websiteareas/:_id",
+      "handler": "Websiteareas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/websiteareas",
+      "handler": "Websiteareas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/websiteareas/:_id",
+      "handler": "Websiteareas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/websiteareas/:_id",
+      "handler": "Websiteareas.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

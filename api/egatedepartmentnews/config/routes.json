@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatedepartmentnews",
+      "handler": "Egatedepartmentnews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatedepartmentnews/count",
+      "handler": "Egatedepartmentnews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatedepartmentnews/:_id",
+      "handler": "Egatedepartmentnews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatedepartmentnews",
+      "handler": "Egatedepartmentnews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatedepartmentnews/:_id",
+      "handler": "Egatedepartmentnews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatedepartmentnews/:_id",
+      "handler": "Egatedepartmentnews.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

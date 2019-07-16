@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/othercentres",
+      "handler": "Othercentre.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/othercentres/count",
+      "handler": "Othercentre.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/othercentres/:_id",
+      "handler": "Othercentre.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/othercentres",
+      "handler": "Othercentre.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/othercentres/:_id",
+      "handler": "Othercentre.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/othercentres/:_id",
+      "handler": "Othercentre.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/communityawarenesses",
+      "handler": "Communityawareness.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/communityawarenesses/count",
+      "handler": "Communityawareness.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/communityawarenesses/:_id",
+      "handler": "Communityawareness.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/communityawarenesses",
+      "handler": "Communityawareness.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/communityawarenesses/:_id",
+      "handler": "Communityawareness.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/communityawarenesses/:_id",
+      "handler": "Communityawareness.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blackpointsoftrafficviolations",
+      "handler": "Blackpointsoftrafficviolation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blackpointsoftrafficviolations/count",
+      "handler": "Blackpointsoftrafficviolation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blackpointsoftrafficviolations/:_id",
+      "handler": "Blackpointsoftrafficviolation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blackpointsoftrafficviolations",
+      "handler": "Blackpointsoftrafficviolation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blackpointsoftrafficviolations/:_id",
+      "handler": "Blackpointsoftrafficviolation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blackpointsoftrafficviolations/:_id",
+      "handler": "Blackpointsoftrafficviolation.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

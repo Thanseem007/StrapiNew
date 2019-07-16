@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "frequentlyaskedquestions",
+  "info": {
+    "name": "faq",
+    "description": "Frequently Asked Questions"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "QuestionEN": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "AnswerEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "QuestionAR": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "AnswerAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

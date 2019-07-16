@@ -1,0 +1,60 @@
+{
+  "connection": "default",
+  "collectionName": "PublicationCategoriesCollections",
+  "info": {
+    "name": "publicationcategories",
+    "description": "Publication Categories"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PublicationCategoryNameEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "PublicationCategoryNameAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TypeOfPublication": {
+      "default": "PDF",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "VIDEO",
+        "AUDIO",
+        "PDF"
+      ]
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "publications": {
+      "collection": "publications",
+      "via": "publicationcategories"
+    },
+    "CategoryCover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

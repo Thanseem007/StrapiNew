@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "termsandconditions",
+  "info": {
+    "name": "termsandconditions",
+    "description": "Terms & Conditions."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "TermsAndConditionsDescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "TermsAndConditionsDescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

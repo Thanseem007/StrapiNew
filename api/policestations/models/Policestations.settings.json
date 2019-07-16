@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "PoliceStations",
+  "info": {
+    "name": "policestations",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "NameEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "NameAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string"
+    },
+    "Latitude": {
+      "default": "",
+      "type": "float",
+      "required": true
+    },
+    "Longitude": {
+      "default": "",
+      "type": "float",
+      "required": true
+    },
+    "Details": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string"
+    },
+    "Title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "communityawareness",
+  "info": {
+    "name": "communityawareness",
+    "description": "Community Awareness"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "SubjectEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "SubjectAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "UploadedFile": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "IssueDate": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/policedepartments",
+      "handler": "Policedepartment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/policedepartments/count",
+      "handler": "Policedepartment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/policedepartments/:_id",
+      "handler": "Policedepartment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/policedepartments",
+      "handler": "Policedepartment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/policedepartments/:_id",
+      "handler": "Policedepartment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/policedepartments/:_id",
+      "handler": "Policedepartment.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

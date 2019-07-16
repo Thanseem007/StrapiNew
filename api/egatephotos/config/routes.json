@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatephotos",
+      "handler": "Egatephotos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatephotos/count",
+      "handler": "Egatephotos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatephotos/:_id",
+      "handler": "Egatephotos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatephotos",
+      "handler": "Egatephotos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatephotos/:_id",
+      "handler": "Egatephotos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatephotos/:_id",
+      "handler": "Egatephotos.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "connection": "default",
+  "collectionName": "websiteourlocations",
+  "info": {
+    "name": "websiteourlocations",
+    "description": "Contact Us - Our Locations"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PoliceStationNameEn": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "PoliceStationNameAr": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "FaxNumber": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "WorkingHours": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "websiteareas": {
+      "collection": "websiteareas",
+      "via": "websiteourlocations"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "EmailId": {
+      "default": "",
+      "type": "email",
+      "required": true
+    },
+    "Latitude": {
+      "default": "",
+      "type": "string"
+    },
+    "Longitude": {
+      "default": "",
+      "type": "string"
+    },
+    "websitepolicestationregions": {
+      "model": "websitepolicestationregion",
+      "via": "websiteourlocations"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

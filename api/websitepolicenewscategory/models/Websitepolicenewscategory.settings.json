@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "websitepolicenewscategory",
+  "info": {
+    "name": "websitepolicenewscategory",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "maxLength": 300
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "maxLength": 300
+    },
+    "websitepolicenews": {
+      "collection": "websitepolicenew",
+      "via": "websitepolicenewscategory"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/telephonedirectories",
+      "handler": "Telephonedirectory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/telephonedirectories/count",
+      "handler": "Telephonedirectory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/telephonedirectories/:_id",
+      "handler": "Telephonedirectory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/telephonedirectories",
+      "handler": "Telephonedirectory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/telephonedirectories/:_id",
+      "handler": "Telephonedirectory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/telephonedirectories/:_id",
+      "handler": "Telephonedirectory.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

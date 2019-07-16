@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lawsandlegislations",
+      "handler": "Lawsandlegislations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lawsandlegislations/count",
+      "handler": "Lawsandlegislations.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lawsandlegislations/:_id",
+      "handler": "Lawsandlegislations.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lawsandlegislations",
+      "handler": "Lawsandlegislations.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lawsandlegislations/:_id",
+      "handler": "Lawsandlegislations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lawsandlegislations/:_id",
+      "handler": "Lawsandlegislations.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "policedepartment",
+  "info": {
+    "name": "policedepartment",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "ID": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "DepartmentNameEN": {
+      "default": "",
+      "type": "string"
+    },
+    "DepartmentNameAR": {
+      "default": "",
+      "type": "string"
+    },
+    "egatedepartmentnews": {
+      "collection": "egatedepartmentnews",
+      "via": "policedepartment"
+    }
+  }
+}

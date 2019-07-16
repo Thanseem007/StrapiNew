@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "10.10.100.74",
+        "port": 27017,
+        "database": "SPSA_CMS",
+        "username": "",
+        "password": ""
+      },
+      "options": {}
+    }
+  }
+}

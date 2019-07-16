@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/websitepolicenews",
+      "handler": "Websitepolicenew.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websitepolicenews/count",
+      "handler": "Websitepolicenew.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websitepolicenews/:_id",
+      "handler": "Websitepolicenew.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/websitepolicenews",
+      "handler": "Websitepolicenew.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/websitepolicenews/:_id",
+      "handler": "Websitepolicenew.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/websitepolicenews/:_id",
+      "handler": "Websitepolicenew.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

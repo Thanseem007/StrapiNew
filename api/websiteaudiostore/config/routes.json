@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/websiteaudiostores",
+      "handler": "Websiteaudiostore.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websiteaudiostores/count",
+      "handler": "Websiteaudiostore.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websiteaudiostores/:_id",
+      "handler": "Websiteaudiostore.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/websiteaudiostores",
+      "handler": "Websiteaudiostore.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/websiteaudiostores/:_id",
+      "handler": "Websiteaudiostore.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/websiteaudiostores/:_id",
+      "handler": "Websiteaudiostore.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

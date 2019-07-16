@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "quicklinks",
+  "info": {
+    "name": "quicklinks",
+    "description": "quicklinks"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "urlforquicklinks": {
+      "model": "urlforquicklinks"
+    },
+    "Document": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Url": {
+      "default": "",
+      "type": "string"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "LanguageKey": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

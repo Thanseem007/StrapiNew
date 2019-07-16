@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatevideos",
+      "handler": "Egatevideos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatevideos/count",
+      "handler": "Egatevideos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatevideos/:_id",
+      "handler": "Egatevideos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatevideos",
+      "handler": "Egatevideos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatevideos/:_id",
+      "handler": "Egatevideos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatevideos/:_id",
+      "handler": "Egatevideos.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

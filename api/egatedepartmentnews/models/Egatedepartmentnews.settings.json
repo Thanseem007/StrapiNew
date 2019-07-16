@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "egatedepartmentnews",
+  "info": {
+    "name": "egatedepartmentnews",
+    "description": "Department news"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "NewsTitleEN": {
+      "default": "",
+      "type": "string",
+      "maxLength": 300
+    },
+    "NewsTitleAR": {
+      "default": "",
+      "type": "string",
+      "maxLength": 300
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text"
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text"
+    },
+    "Date": {
+      "default": "",
+      "type": "date"
+    },
+    "policedepartment": {
+      "collection": "policedepartment",
+      "via": "egatedepartmentnews",
+      "dominant": true
+    },
+    "Enable": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

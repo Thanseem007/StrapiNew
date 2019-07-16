@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/egatealbumstores",
+      "handler": "Egatealbumstores.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatealbumstores/count",
+      "handler": "Egatealbumstores.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/egatealbumstores/:_id",
+      "handler": "Egatealbumstores.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/egatealbumstores",
+      "handler": "Egatealbumstores.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/egatealbumstores/:_id",
+      "handler": "Egatealbumstores.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/egatealbumstores/:_id",
+      "handler": "Egatealbumstores.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

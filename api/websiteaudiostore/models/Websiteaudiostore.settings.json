@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "audiostores",
+  "info": {
+    "name": "websiteaudiostore",
+    "description": "Audio Store"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "TitleEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "audio": {
+      "collection": "websiteaudio",
+      "via": "audiostore"
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "ShortDescriptionEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "ShortDescriptionAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    }
+  }
+}

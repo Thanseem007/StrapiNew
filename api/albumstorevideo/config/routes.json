@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/albumstorevideos",
+      "handler": "Albumstorevideo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albumstorevideos/count",
+      "handler": "Albumstorevideo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/albumstorevideos/:_id",
+      "handler": "Albumstorevideo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/albumstorevideos",
+      "handler": "Albumstorevideo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/albumstorevideos/:_id",
+      "handler": "Albumstorevideo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/albumstorevideos/:_id",
+      "handler": "Albumstorevideo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customerhappinesscenters",
+      "handler": "Customerhappinesscenters.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customerhappinesscenters/count",
+      "handler": "Customerhappinesscenters.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customerhappinesscenters/:_id",
+      "handler": "Customerhappinesscenters.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customerhappinesscenters",
+      "handler": "Customerhappinesscenters.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customerhappinesscenters/:_id",
+      "handler": "Customerhappinesscenters.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customerhappinesscenters/:_id",
+      "handler": "Customerhappinesscenters.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

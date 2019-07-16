@@ -1,0 +1,62 @@
+{
+  "connection": "default",
+  "collectionName": "egateevents",
+  "info": {
+    "name": "egateevents",
+    "description": "Events to be shown in Egate."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "DescriptionEn": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAr": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Date": {
+      "default": "",
+      "type": "date"
+    },
+    "TitleEn": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "TitleAr": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "LocationEn": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "LocationAr": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

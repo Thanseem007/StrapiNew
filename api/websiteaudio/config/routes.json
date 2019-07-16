@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/websiteaudios",
+      "handler": "Websiteaudio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websiteaudios/count",
+      "handler": "Websiteaudio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websiteaudios/:_id",
+      "handler": "Websiteaudio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/websiteaudios",
+      "handler": "Websiteaudio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/websiteaudios/:_id",
+      "handler": "Websiteaudio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/websiteaudios/:_id",
+      "handler": "Websiteaudio.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/websitepolicestationregions",
+      "handler": "Websitepolicestationregion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websitepolicestationregions/count",
+      "handler": "Websitepolicestationregion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/websitepolicestationregions/:_id",
+      "handler": "Websitepolicestationregion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/websitepolicestationregions",
+      "handler": "Websitepolicestationregion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/websitepolicestationregions/:_id",
+      "handler": "Websitepolicestationregion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/websitepolicestationregions/:_id",
+      "handler": "Websitepolicestationregion.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

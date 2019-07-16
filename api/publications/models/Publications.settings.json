@@ -1,0 +1,72 @@
+{
+  "connection": "default",
+  "collectionName": "PublicationsCollections",
+  "info": {
+    "name": "publications",
+    "description": "Publications"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PublicationNameEN": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "PublicationNameAR": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "Date": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "DescriptionEN": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "DescriptionAR": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "publicationcategories": {
+      "model": "publicationcategories",
+      "via": "publications"
+    },
+    "PublicationCover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "PublicationFile": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "ShortDescriptionEN": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "ShortDescriptionAR": {
+      "default": "",
+      "maxLength": 300,
+      "type": "string",
+      "required": true
+    },
+    "Enable": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}
