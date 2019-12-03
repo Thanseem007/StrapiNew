@@ -21,7 +21,7 @@
   "dependencies": {
     "lodash": "^4.17.5",
     "move-file": "^1.2.0",
-    "strapi": "3.0.0-alpha.25.2",
+    "strapi": "3.0.0-beta.17.5",
     "strapi-hook-mongoose": "3.0.0-alpha.25.2",
     "windows-network-drive": "^2.1.1"
   },
